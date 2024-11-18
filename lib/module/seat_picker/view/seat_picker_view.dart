@@ -13,7 +13,7 @@ class SeatPickerView extends StatefulWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Select Seat",
+          "Pilih Kursi",
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -46,7 +46,7 @@ class SeatPickerView extends StatefulWidget {
                     width: 5.0,
                   ),
                   Text(
-                    "Available",
+                    "Tersedia",
                     style: TextStyle(
                       fontSize: 14.0,
                     ),
@@ -57,13 +57,13 @@ class SeatPickerView extends StatefulWidget {
                   Icon(
                     Icons.square,
                     size: 24.0,
-                    color: Color(0xfff8c321),
+                    color: Colors.orange,
                   ),
                   SizedBox(
                     width: 5.0,
                   ),
                   Text(
-                    "Selected",
+                    "Terpilih",
                     style: TextStyle(
                       fontSize: 14.0,
                     ),
@@ -74,13 +74,13 @@ class SeatPickerView extends StatefulWidget {
                   Icon(
                     Icons.square,
                     size: 24.0,
-                    color: Colors.white,
+                    color: Color(0xffd9d9d9),
                   ),
                   SizedBox(
                     width: 5.0,
                   ),
                   Text(
-                    "Unavailable",
+                    "Tidak tersedia",
                     style: TextStyle(
                       fontSize: 14.0,
                     ),
@@ -138,7 +138,7 @@ class SeatPickerView extends StatefulWidget {
                               height: 30,
                               child: ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: const Color(0xfffdc620),
+                                  backgroundColor: Colors.orange,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(12),
                                   ),
@@ -146,7 +146,7 @@ class SeatPickerView extends StatefulWidget {
                                 onPressed: () =>
                                     Get.offAll(const BookingDetailView()),
                                 child: const Text(
-                                  "Executive",
+                                  "Eksekutif",
                                   style: TextStyle(
                                     color: Color(0xff383d47),
                                     fontSize: 12,
@@ -182,7 +182,7 @@ class SeatPickerView extends StatefulWidget {
                                       if (selectedSeatByOther) {
                                         color = const Color(0xffe4e4e4);
                                       } else if (selected) {
-                                        color = const Color(0xfffdc620);
+                                        color = Colors.orange;
                                       }
 
                                       return InkWell(
@@ -295,7 +295,7 @@ class SeatPickerView extends StatefulWidget {
             decoration: const BoxDecoration(
               border: Border(
                 top: BorderSide(
-                  color: Color(0xfff8c321),
+                  color: Colors.orange,
                   width: 4.0,
                 ),
               ),
@@ -306,14 +306,14 @@ class SeatPickerView extends StatefulWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "Selected Seat",
+                      "Kursi Terpilih",
                       style: TextStyle(
                         fontSize: 14.0,
                         color: Color(0xffd9d9d9),
                       ),
                     ),
                     Text(
-                      "Executive. Seat 12",
+                      "Eksekutif. Kursi 12",
                       style: TextStyle(
                         fontSize: 16.0,
                         fontWeight: FontWeight.bold,
@@ -328,14 +328,14 @@ class SeatPickerView extends StatefulWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "Price",
+                      "Harga",
                       style: TextStyle(
                         fontSize: 14.0,
                         color: Color(0xffd9d9d9),
                       ),
                     ),
                     Text(
-                      "\$64.00",
+                      "Rp. 68.000",
                       style: TextStyle(
                         fontSize: 16.0,
                         fontWeight: FontWeight.bold,
@@ -351,14 +351,14 @@ class SeatPickerView extends StatefulWidget {
                   width: MediaQuery.of(context).size.width,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xfffdc620),
+                      backgroundColor: Colors.orange,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
                     ),
                     onPressed: () => Get.offAll(const BookingDetailView()),
                     child: const Text(
-                      "Confirm Seat",
+                      "Konfirmasi",
                       style: TextStyle(
                         color: Color(0xff383d47),
                         fontSize: 16,

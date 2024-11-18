@@ -17,7 +17,7 @@ ThemeData getTicketBookingTheme() {
     ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       unselectedItemColor: Color(0xffa9a9a9),
-      selectedItemColor: Color(0xfffdc620),
+      selectedItemColor: Colors.orange,
     ),
     tabBarTheme: const TabBarTheme(
       unselectedLabelColor: Colors.grey,

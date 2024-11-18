@@ -14,7 +14,7 @@ class BookingDetailView extends StatefulWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Ticket",
+          "Tiket",
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -112,7 +112,7 @@ class BookingDetailView extends StatefulWidget {
                             children: [
                               Expanded(
                                 child: Text(
-                                  "Executive",
+                                  "Eksekutif",
                                   style: TextStyle(
                                     fontSize: 16.0,
                                     color: Color(0xff393e48),
@@ -120,7 +120,7 @@ class BookingDetailView extends StatefulWidget {
                                 ),
                               ),
                               Text(
-                                "18 Juni 2013",
+                                "18 Juni 2024",
                                 style: TextStyle(
                                   fontSize: 16.0,
                                   fontWeight: FontWeight.bold,
@@ -139,14 +139,14 @@ class BookingDetailView extends StatefulWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "From",
+                                      "Dari",
                                       style: TextStyle(
                                         color: Color(0xffaeb2b4),
                                         fontSize: 12.0,
                                       ),
                                     ),
                                     Text(
-                                      "Pati",
+                                      "Bekasi",
                                       style: TextStyle(
                                         fontSize: 16.0,
                                         color: Color(0xff393e48),
@@ -161,14 +161,14 @@ class BookingDetailView extends StatefulWidget {
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Text(
-                                      "To",
+                                      "Ke",
                                       style: TextStyle(
                                         color: Color(0xffaeb2b4),
                                         fontSize: 12.0,
                                       ),
                                     ),
                                     Text(
-                                      "Kudus",
+                                      "Padang",
                                       style: TextStyle(
                                         fontSize: 16.0,
                                         color: Color(0xff393e48),
@@ -190,14 +190,14 @@ class BookingDetailView extends StatefulWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Depature",
+                                      "Keberangkatan",
                                       style: TextStyle(
                                         color: Color(0xffaeb2b4),
                                         fontSize: 12.0,
                                       ),
                                     ),
                                     Text(
-                                      "08:00 AM",
+                                      "05:00 AM",
                                       style: TextStyle(
                                         fontSize: 16.0,
                                         color: Color(0xff393e48),
@@ -212,14 +212,14 @@ class BookingDetailView extends StatefulWidget {
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Text(
-                                      "Arrival",
+                                      "Kedatangan",
                                       style: TextStyle(
                                         color: Color(0xffaeb2b4),
                                         fontSize: 12.0,
                                       ),
                                     ),
                                     Text(
-                                      "09:00 AM",
+                                      "10:00 AM",
                                       style: TextStyle(
                                         fontSize: 16.0,
                                         color: Color(0xff393e48),
@@ -241,14 +241,14 @@ class BookingDetailView extends StatefulWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Class",
+                                      "Kelas",
                                       style: TextStyle(
                                         color: Color(0xffaeb2b4),
                                         fontSize: 12.0,
                                       ),
                                     ),
                                     Text(
-                                      "Executive",
+                                      "Eksekutif",
                                       style: TextStyle(
                                         fontSize: 16.0,
                                         color: Color(0xff393e48),
@@ -263,14 +263,14 @@ class BookingDetailView extends StatefulWidget {
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Text(
-                                      "Seat",
+                                      "Kursi",
                                       style: TextStyle(
                                         color: Color(0xffaeb2b4),
                                         fontSize: 12.0,
                                       ),
                                     ),
                                     Text(
-                                      "Executive, Seat 12",
+                                      "Eksekutif, Kursi 12",
                                       style: TextStyle(
                                         fontSize: 16.0,
                                         color: Color(0xff393e48),
@@ -292,14 +292,14 @@ class BookingDetailView extends StatefulWidget {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "Passanger",
+                                      "Penumpang",
                                       style: TextStyle(
                                         color: Color(0xffaeb2b4),
                                         fontSize: 12.0,
                                       ),
                                     ),
                                     Text(
-                                      "1 Adult",
+                                      "1 Dewasa",
                                       style: TextStyle(
                                         fontSize: 16.0,
                                         color: Color(0xff393e48),
@@ -314,7 +314,7 @@ class BookingDetailView extends StatefulWidget {
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Text(
-                                      "Baggage",
+                                      "Berat",
                                       style: TextStyle(
                                         color: Color(0xffaeb2b4),
                                         fontSize: 12.0,
@@ -362,14 +362,14 @@ class BookingDetailView extends StatefulWidget {
               width: MediaQuery.of(context).size.width,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xfffdc620),
+                  backgroundColor: Colors.orange,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
                 ),
                 onPressed: () => Get.to(const SeatPickerView()),
                 child: const Text(
-                  "Download Ticket",
+                  "Download Tiket",
                   style: TextStyle(
                     color: Color(0xff383d47),
                     fontSize: 16,

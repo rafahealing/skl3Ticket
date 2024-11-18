@@ -35,14 +35,14 @@ class _QDatePickerState extends State<QDatePicker> {
 
   getInitialValue() {
     if (widget.value != null) {
-      return DateFormat("d MMM y").format(widget.value!);
+      return DateFormat("Tgl Bln Thn").format(widget.value!);
     }
     return "-";
   }
 
   getFormattedValue() {
     if (selectedValue != null) {
-      return DateFormat("d MMM y").format(selectedValue!);
+      return DateFormat("Tgl Bln Thn").format(selectedValue!);
     }
     return "-";
   }

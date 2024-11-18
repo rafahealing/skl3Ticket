@@ -16,7 +16,7 @@ class DashboardView extends StatefulWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Hello, Samuel",
+          "Halo, Bujang",
           style: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.bold,
@@ -27,7 +27,7 @@ class DashboardView extends StatefulWidget {
             padding: EdgeInsets.all(15.0),
             child: Badge(
               label: Text(
-                "4",
+                "5",
                 style: TextStyle(
                   color: Colors.white,
                 ),
@@ -44,7 +44,7 @@ class DashboardView extends StatefulWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                "Book Your Ticket Today",
+                "Pesan Tiket Anda Hari Ini",
                 style: TextStyle(
                   fontSize: 26.0,
                   fontWeight: FontWeight.bold,
@@ -70,15 +70,15 @@ class DashboardView extends StatefulWidget {
                       QCategoryPicker(
                         items: const [
                           {
-                            "label": "One Way",
+                            "label": "Sekali jalan",
                             "value": "1",
                           },
                           {
-                            "label": "Round - Trip",
+                            "label": "Pulang-pergi",
                             "value": "2",
                           },
                           {
-                            "label": "Multiple City",
+                            "label": "Beberapa Kota",
                             "value": "3",
                           },
                         ],
@@ -90,33 +90,33 @@ class DashboardView extends StatefulWidget {
                         height: 5.0,
                       ),
                       QDropdownField(
-                        label: "From",
-                        value: "Pati",
+                        label: "Dari",
+                        value: "Bekasi",
                         // validator: Validator.required,
                         items: const [
                           {
-                            "label": "Pati",
-                            "value": "Pati",
+                            "label": "Bekasi",
+                            "value": "Bekasi",
                           },
                           {
-                            "label": "Kudus",
-                            "value": "Kudus",
+                            "label": "Padang",
+                            "value": "Padang",
                           }
                         ],
                         onChanged: (value, label) {},
                       ),
                       QDropdownField(
-                        label: "To",
-                        value: "Kudus",
-                        // validator: Validator.required,
+                        label: "Ke",
+                        value: "Padang",
+                        // validadr: Validadr.required,
                         items: const [
                           {
-                            "label": "Pati",
-                            "value": "Pati",
+                            "label": "Bekasi",
+                            "value": "Bekasi",
                           },
                           {
-                            "label": "Kudus",
-                            "value": "Kudus",
+                            "label": "Padang",
+                            "value": "Padang",
                           }
                         ],
                         onChanged: (value, label) {},
@@ -125,9 +125,9 @@ class DashboardView extends StatefulWidget {
                         children: [
                           Expanded(
                             child: QDatePicker(
-                              label: "Depart",
+                              label: "keberangkatan",
                               value: DateTime.now(),
-                              // validator: Validator.required,
+                              // validadr: Validator.required,
                               onChanged: (value) {},
                             ),
                           ),
@@ -137,14 +137,14 @@ class DashboardView extends StatefulWidget {
                           const Text(
                             "-",
                             style: TextStyle(
-                                fontSize: 22.0, color: Color(0xff393e48)),
+                                fontSize: 22.0, color: Colors.orange),
                           ),
                           const SizedBox(
                             width: 20.0,
                           ),
                           Expanded(
                             child: QDatePicker(
-                              label: "Return",
+                              label: "Kembali",
                               value: DateTime.now(),
                               // validator: Validator.required,
                               onChanged: (value) {},
@@ -153,7 +153,7 @@ class DashboardView extends StatefulWidget {
                         ],
                       ),
                       const Text(
-                        "Passengers",
+                        "Penumpang",
                         style: TextStyle(
                           fontSize: 14.0,
                           color: Color(0xff393e48),
@@ -175,7 +175,7 @@ class DashboardView extends StatefulWidget {
                                   decoration: BoxDecoration(
                                     color: (controller.qtyAdult == 0)
                                         ? const Color(0xffdedede)
-                                        : const Color(0xfffdc620),
+                                        : Color.fromARGB(255, 253, 43, 32),
                                   ),
                                   child: const Icon(
                                     Icons.remove,
@@ -184,7 +184,7 @@ class DashboardView extends StatefulWidget {
                                 ),
                               ),
                               Text(
-                                "${controller.qtyAdult} Adult",
+                                "${controller.qtyAdult} Dewasa",
                                 style: const TextStyle(
                                   fontSize: 16.0,
                                   color: Color(0xff393e48),
@@ -198,7 +198,7 @@ class DashboardView extends StatefulWidget {
                                     left: 20.0,
                                   ),
                                   decoration: const BoxDecoration(
-                                    color: Color(0xfffdc620),
+                                    color: Colors.orange,
                                   ),
                                   child: const Icon(
                                     Icons.add,
@@ -220,7 +220,7 @@ class DashboardView extends StatefulWidget {
                                   decoration: BoxDecoration(
                                     color: (controller.qtyChild == 0)
                                         ? const Color(0xffdedede)
-                                        : const Color(0xfffdc620),
+                                        : Color.fromARGB(255, 253, 43, 32),
                                   ),
                                   child: const Icon(
                                     Icons.remove,
@@ -229,7 +229,7 @@ class DashboardView extends StatefulWidget {
                                 ),
                               ),
                               Text(
-                                "${controller.qtyChild} Child",
+                                "${controller.qtyChild} Anak",
                                 style: const TextStyle(
                                   fontSize: 16.0,
                                   color: Color(0xff393e48),
@@ -243,7 +243,7 @@ class DashboardView extends StatefulWidget {
                                     left: 20.0,
                                   ),
                                   decoration: const BoxDecoration(
-                                    color: Color(0xfffdc620),
+                                    color: Colors.orange,
                                   ),
                                   child: const Icon(
                                     Icons.add,
@@ -259,21 +259,21 @@ class DashboardView extends StatefulWidget {
                         height: 5.0,
                       ),
                       QDropdownField(
-                        label: "Train Classes",
-                        value: "Executive",
+                        label: "Kelas Kereta Api",
+                        value: "Eksekutif",
                         // validator: Validator.required,
                         items: const [
                           {
-                            "label": "Executive",
-                            "value": "Executive",
+                            "label": "Eksekutif",
+                            "value": "Eksekutif",
                           },
                           {
                             "label": "Business",
                             "value": "Business",
                           },
                           {
-                            "label": "Economy",
-                            "value": "Economy",
+                            "label": "Ekonomi",
+                            "value": "Ekonomi",
                           }
                         ],
                         onChanged: (value, label) {},
@@ -286,14 +286,14 @@ class DashboardView extends StatefulWidget {
                         width: MediaQuery.of(context).size.width,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xfffdc620),
+                            backgroundColor: Colors.orange,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
                           onPressed: () => Get.to(const SeatPickerView()),
                           child: const Text(
-                            "Continue",
+                            "Pesan",
                             style: TextStyle(
                               color: Color(0xff383d47),
                               fontSize: 16,

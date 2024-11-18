@@ -148,7 +148,7 @@ class _QCategoryPickerState extends State<QCategoryPicker> {
                       child: Card(
                         margin: const EdgeInsets.only(right: 15.0),
                         color: selected
-                            ? const Color(0xfffdc620)
+                            ? Colors.orange
                             : const Color(0xffe8e8e8),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(

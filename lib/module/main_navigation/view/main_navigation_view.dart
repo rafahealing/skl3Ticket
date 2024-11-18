@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:train_ticket_buying_app/core.dart';
 import '../../dashboard/view/dashboard_view.dart';
 import '../controller/main_navigation_controller.dart';
 
@@ -15,10 +16,8 @@ class MainNavigationView extends StatefulWidget {
         body: IndexedStack(
           index: controller.selectedIndex,
           children: [
-            const DashboardView(),
-            Container(),
-            Container(),
-            Container(),
+            DashboardView(),
+            BookingDetailView(),
           ],
         ),
         bottomNavigationBar: Padding(
@@ -38,29 +37,16 @@ class MainNavigationView extends StatefulWidget {
                     Icons.home,
                     size: 36.0,
                   ),
-                  label: "Dashboard",
+                  label: "Dasbor",
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(
                     Icons.shopping_bag,
                     size: 36.0,
                   ),
-                  label: "Order",
+                  label: "Pesanan",
                 ),
-                BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.airplane_ticket,
-                    size: 36.0,
-                  ),
-                  label: "Favorite",
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.settings,
-                    size: 36.0,
-                  ),
-                  label: "User",
-                ),
+                
               ],
             ),
           ),
